@@ -1,0 +1,27 @@
+.cardlogin {
+    width: 40%;
+    border: 2px solid;
+    padding-bottom: 40%;
+    text-align: center;
+    background-color: white;
+    border-radius:4%;
+    height:10px;
+    margin:auto;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.bilkentlogo {
+    width: 150px;
+    height: 150px;
+    display: inherit;
+    margin: auto;
+}
+
+.col-md-8 {
+    /* padding-left: 500px; */
+    
+}
+
