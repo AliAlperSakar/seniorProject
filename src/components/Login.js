@@ -15,40 +15,45 @@ export default class Login extends Component{
            status:'',
            data:''
         }
-        this.sendUrl = this.sendUrl.bind(this);
+        // this.sendUrl = this.sendUrl.bind(this);
     }
 
     componentDidMount(){
-        this.sendUrl();
-        console.log("Hello");
+        // this.sendUrl();
+        // console.log("Hello");
     }
 
-    sendUrl(){
-        Axios.get('https://stars.bilkent.edu.tr/accounts/login',{
-            params: {url: this.state.url}
-        }).then( (response) => {
-            this.setState({
-                data: response.data
-            })
+    // sendUrl(){
+    //     Axios.get('https://stars.bilkent.edu.tr/accounts/login',{
+    //         params: {url: this.state.url}
+    //     }).then( (response) => {
+    //         this.setState({
+    //             data: response.data
+    //         })
 
-            console.log(response);
-        });
-    }
+    //         console.log(response);
+    //     });
+    // }
     // submitForm(){
     //     console.log("Submit Form");
     // }
 
+    load(){
+
+    }
     render(){
-        console.log(this.state.data);
+        console.log(this.state.url);
         return(
             <div>
-                <Iframe url='https://stars.bilkent.edu.tr/accounts/login'
-                    width="700px"
-                    height="700px"
+                <Iframe url=''
+                    width="100%"
+                    height="1000px"
                     id="myId"
                     className="myClassname"
                     display="initial"
                     position="relative"
+                    src="https://stars.bilkent.edu.tr/accounts/login"
+                    onLoad = {function() { console.log(document.getElementById("myId").ownerDocument.body.children) }}
                     />
             </div>
         //     <div className="col-md-8">
