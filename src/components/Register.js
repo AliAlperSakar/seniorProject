@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import bilkentImage from '../images/bilkentImage.png';
 import bilsportlogo from '../images/fotos/bilsportlogo.png';
-import "../css/Login.css";
+import "../css/Register.css";
 import {Link} from "react-router-dom";
 
 
+class Register extends Component {
 
-class Login extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -24,6 +24,8 @@ class Login extends React.Component {
     handleChange(event) {
         this.setState({value: event.target.value});
     }
+    
+
 
     render() {
         console.log(this.state.value);
@@ -46,17 +48,41 @@ class Login extends React.Component {
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><i class="fa fa-user"></i></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder="Username" onChange={handleChange} />
+                                <input type="text" className="form-control" placeholder="Name" onChange={handleChange} />
+                            </div>
+                            <div className="input-group mb-3">
+                                <div className="input-group-prepend">
+                                    <span className="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" className="form-control" placeholder="Surname" onChange={handleChange} />
+                            </div>
+                            <div className="input-group mb-3">
+                                <div className="input-group-prepend">
+                                    <span className="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" className="form-control" placeholder="Id" onChange={handleChange}/>
+                            </div>
+                            <div className="input-group mb-3">
+                                <div className="input-group-prepend">
+                                    <span className="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" className="form-control" placeholder="E-mail" onChange={handleChange}/>
                             </div>
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><i class="fa fa-lock"></i></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder="Password" onChange={handleChange}/>
+                                <input type="password" className="form-control" placeholder="Password" onChange={handleChange}/>
+                            </div>
+                            <div className="input-group mb-3">
+                                <div className="input-group-prepend">
+                                    <span className="input-group-text"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input type="password" className="form-control" placeholder="PasswordControl" onChange={handleChange}/>
                             </div>
                             <div>
-                                <Link to="/login"><button type="button" className="btn btn-secondary btn-block">LOGIN</button></Link>
                                 <Link to="/register"><button type="button" className="btn btn-secondary btn-block">REGISTER</button></Link>
+                                <Link to="/login"><button type="button" className="btn btn-secondary btn-block">LOGIN</button></Link>
                             </div>
                             <div className="message">
                                 <div><input type="checkbox" /> Remember ME</div>
@@ -77,4 +103,4 @@ class Login extends React.Component {
 }
 
 
-export default Login;
+export default Register;

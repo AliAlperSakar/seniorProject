@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MainLayout from "../layouts/MainLayout";
 import Login from "../components/Login";
+import Register from "../components/Register";
 import '../css/Main.css';
 import {Button} from "semantic-ui-react";
 import {
@@ -19,11 +20,12 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div>
+                <div className="main">
                     <Switch>
-                        <Route path="/" exact component={Home}/>
+                        <Route path="/" exact component={Register}/>
+                        <Route path="/register" component={Register} />
                         <Route path="/homepage" component={MainLayout} />
-                        <Route path="/login" component={Login} />
+                        <Route path="/login" exact component={Login} /> 
                     </Switch>
                     {/* <MainLayout /> */}
                     {/* <Login /> */}
