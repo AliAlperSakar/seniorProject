@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import MainLayout from "../layouts/MainLayout";
-import Login from "../components/Login";
-import Register from "../components/Register";
-import '../css/Main.css';
+import HomePage from "../components/HomePage";
 import {Button} from "semantic-ui-react";
 import {
     BrowserRouter as Router,
@@ -10,6 +7,11 @@ import {
     Route,
     Link
 } from 'react-router-dom';
+import Announcement from "./Announcement";
+import Register from "./Register";
+import Login from "./Login";
+
+
 
 class App extends Component {
     constructor() {
@@ -20,12 +22,15 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div className="main">
+                <div>
                     <Switch>
-                        <Route path="/" exact component={Register}/>
-                        <Route path="/register" component={Register} />
-                        <Route path="/homepage" component={MainLayout} />
-                        <Route path="/login" exact component={Login} /> 
+                        <Route path="/" exact component={Announcement}/>
+                        <Route path="/announcements" component={Announcement}/>
+                        <Route path="/announcements/:id" component={Announcement}/>
+                        <Route path="/register" exact component={Register} />
+                        <Route path="/login" exact component={Login} />
+                        <Route path="/homepage" exact component={HomePage} />
+
                     </Switch>
                     {/* <MainLayout /> */}
                     {/* <Login /> */}

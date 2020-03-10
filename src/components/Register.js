@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import bilkentImage from '../images/bilkentImage.png';
 import bilsportlogo from '../images/fotos/bilsportlogo.png';
-import "../css/Register.css";
+import "../css/register.css";
 import {Link} from "react-router-dom";
 
 
@@ -31,8 +31,9 @@ class Register extends Component {
         console.log(this.state.value);
         var handleChange = this.handleChange;
         return (
+            <div className="main">
             <div className="login">
-            <div className="container">
+            <div className="regcontainer">
                 <div className="bilkentsportlogo">
                             <img className="bilkentimage" src={bilkentImage} alt="bilkentImage" /> 
                 </div>
@@ -98,6 +99,8 @@ class Register extends Component {
                 </div>
             </div>
             </div>
+            </div>
+
         )
     }
 }

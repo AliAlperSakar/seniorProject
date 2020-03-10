@@ -29,9 +29,10 @@ class Login extends React.Component {
         console.log(this.state.value);
         var handleChange = this.handleChange;
         return (
+            <div className="main">
             <div className="login">
-            <div className="container">
-                <div className="bilkentsportlogo">
+            <div className="logcontainer">
+                <div className="bilkentsportreglogo">
                             <img className="bilkentimage" src={bilkentImage} alt="bilkentImage" /> 
                 </div>
                 <div className="form-box">
@@ -70,6 +71,7 @@ class Login extends React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             </div>
         )

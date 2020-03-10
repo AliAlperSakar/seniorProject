@@ -1,0 +1,39 @@
+.announcement{
+    margin: 80px 20px;
+    text-align: center;
+}
+
+.table{
+    width: 50%;
+    float: left;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 200px;
+    margin: 200px;
+}
+
+.specialtr:hover {
+    background-color: #2d2a62;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.detail{
+    border: 2px whitesmoke solid;
+    float: right;
+    width: 49.9%;
+}

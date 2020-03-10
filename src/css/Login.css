@@ -1,18 +1,27 @@
-.login{
-  justify-content: center;
+.main {
+    background: linear-gradient(to left, #2d2a62, white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
 }
-  
-  .container {
+
+.login {
+    justify-content: center;
+}
+
+.logcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
-  }
+}
 
-  .form-box {
+.form-box {
     width: 600px;
-    height: 500px;
+    /* height: 500px; */
     background-color: black;
     padding: 20px;
     display: flex;
@@ -20,52 +29,54 @@
     justify-content: flex-start;
     opacity: 0.7;
     border-radius: 2%;
-  }
+}
 
-  .header-form {
+.header-form {
     margin-bottom: 15px;
-  }
+}
 
-  button {
+button {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .message {
+.message {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .social {
+}
+
+.social {
     display: flex;
     justify-content: space-around;
     padding: 30px;
-  }
-  
-  .social i {
+}
+
+.social i {
     font-size: 35px;
-  }
-  
-  .social i:hover {
+}
+
+.social i:hover {
     color: red;
     cursor: pointer;
-  }
-  
-  .bilkentlogo {
-    width: 500px ;
+}
+
+.bilkentlogo {
+    width: 500px;
     height: 320px;
     margin-bottom: -80px;
 }
 
-.bilkentsportlogo{
-  position: absolute;
-  z-index: 1;
-  margin-top: -265px;
+.bilkentsportreglogo {
+    position: absolute;
+    z-index: 1;
+    margin-top: -290px;
 }
 
-.bilkentimage{
-  width: 220px;
+.bilkentimage {
+    width: 220px;
 }
+
+
 /*
 .cardlogin {
     width: 40%;
@@ -83,6 +94,7 @@
     padding: 100px;
 } */
 
+
 /*
 .login{
     width: 1000px;
@@ -99,6 +111,3 @@
 
 .col-md-8 {
     /* padding-left: 500px; */
-    
-
-

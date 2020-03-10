@@ -1,8 +1,17 @@
+.main {
+  background: linear-gradient(to left, #2d2a62, white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
 .login{
     justify-content: center;
   }
     
-    .container {
+    .regcontainer {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -12,7 +21,7 @@
   
     .form-box {
       width: 600px;
-      height: 700px;
+      /* height: 700px; */
       background-color: black;
       padding: 20px;
       display: flex;
@@ -60,7 +69,7 @@
   .bilkentsportlogo{
     position: absolute;
     z-index: 1;
-    margin-top: -350px;
+    margin-top: -390px;
   }
   
   .bilkentimage{
