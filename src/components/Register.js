@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import bilkentImage from '../images/bilkentImage.png';
-import bilsportlogo from '../images/fotos/bilsportlogo.png';
+import bilsportlogo from '../images/fotos/BilSport_white.png';
 import "../css/register.css";
 import {Link} from "react-router-dom";
 
@@ -39,7 +39,7 @@ class Register extends Component {
                 </div>
                 <div className="form-box">
                     <div className="header-form">
-                        <div className="image">
+                        <div className="regimage">
                             <img className="bilkentlogo" src={bilsportlogo} alt="bilkentImage" /> 
                         </div>
                     </div>

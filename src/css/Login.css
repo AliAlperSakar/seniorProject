@@ -62,21 +62,26 @@ button {
 
 .bilkentlogo {
     width: 500px;
-    height: 320px;
+    height: 250px;
     margin-bottom: -80px;
+    padding-bottom: 20px;
 }
 
 .bilkentsportreglogo {
     position: absolute;
     z-index: 1;
-    margin-top: -290px;
+    margin-top: -304px;
 }
 
 .bilkentimage {
     width: 220px;
 }
 
-
+.logimage{
+    margin-bottom: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
 /*
 .cardlogin {
     width: 40%;

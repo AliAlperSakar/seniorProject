@@ -1,0 +1,29 @@
+.tourmain{
+    position: fixed;
+    top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.basketbol{
+    background-color: white;
+}
+
+
+.futbol{
+    float: right;
+    width: 50%;
+}
+
+.voleybol{
+    float: left;
+    width: 50%;
+}
+
+.racket{
+    float: right;
+    width: 50%;
+}

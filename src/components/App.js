@@ -10,6 +10,10 @@ import {
 import Announcement from "./Announcement";
 import Register from "./Register";
 import Login from "./Login";
+import Tournament from "./Tournament";
+import Reservation from "./Reservation";
+import Course from "./Course";
+
 
 
 
@@ -24,7 +28,10 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={Announcement}/>
+                        <Route path="/" exact component={HomePage}/>
+                        <Route path="/courses" component={Course}/>
+                        <Route path="/tournaments" component={Tournament}/>
+                        <Route path="/reservations" component={Reservation}/>
                         <Route path="/announcements" component={Announcement}/>
                         <Route path="/announcements/:id" component={Announcement}/>
                         <Route path="/register" exact component={Register} />

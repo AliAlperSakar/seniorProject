@@ -75,7 +75,7 @@ export default class HomePage extends Component {
 							<div className="announce" >
 								<img className='announcementlogo' src={annoucementlogo} />
 							</div >
-							<table className='table' >
+							<table className='hometable' >
 								<tbody>
 									<tr >
 										<th> Content </th> <th > Date </th > </tr >
