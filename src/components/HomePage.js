@@ -80,7 +80,7 @@ export default class HomePage extends Component {
 									<tr >
 										<th> Content </th> <th > Date </th > </tr >
 									{announcements.map((x, index) =>
-										<tr className='specialtr' key={index} >
+										<tr className='specialtrhome' key={index} >
 											<td> <Link to={href + index} > {x.text} </Link></td >
 											<td> {x.date} </td></tr >
 									)

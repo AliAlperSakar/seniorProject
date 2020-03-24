@@ -28,7 +28,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={HomePage}/>
+                        <Route path="/" exact component={Announcement}/>
                         <Route path="/courses" component={Course}/>
                         <Route path="/tournaments" component={Tournament}/>
                         <Route path="/reservations" component={Reservation}/>
@@ -37,7 +37,6 @@ class App extends Component {
                         <Route path="/register" exact component={Register} />
                         <Route path="/login" exact component={Login} />
                         <Route path="/homepage" exact component={HomePage} />
-
                     </Switch>
                     {/* <MainLayout /> */}
                     {/* <Login /> */}

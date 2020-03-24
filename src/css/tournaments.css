@@ -8,22 +8,37 @@
     background-color: whitesmoke;
 }
 
-.basketbol{
-    background-color: white;
+li{
+    list-style-type: none;
+    width: 100px;
+}
+.item{
+    width: 100px;
 }
 
-
-.futbol{
-    float: right;
-    width: 50%;
+.imgUl li{
+    display: inline;
+    margin: 10%;
 }
 
-.voleybol{
-    float: left;
-    width: 50%;
+.imgUl span{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 10%;
 }
 
-.racket{
-    float: right;
-    width: 50%;
+.deneme{
+    width: 25%;
+    height: 25%;
+    opacity: 0.8;
 }
+
+.deneme:hover{
+    width: 30%;
+    height: 30%;
+    opacity: 1;
+    /* border: 1px solid black; */
+    background-color: lightblue;
+}
+

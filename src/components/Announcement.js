@@ -4,6 +4,7 @@ import annoucementlogo from '../images/fotos/announcement.png'
 import axios from "axios";
 import "../css/announcement.css";
 import { Link } from "react-router-dom";
+import deneme from '../images/fotos/Bbuilding.jpg';
 
 export default class Announcement extends Component {
     constructor(props) {
@@ -44,29 +45,29 @@ export default class Announcement extends Component {
     render() {
         const { announcements } = this.state;
         const href = "/announcements/";
-        // console.log(this.state.announcement);
+        console.log(this.state.announcement);
         return (
             <div>
                 <MainLayout />
                 <div className="announcement">
-                    <div className="announce" >
+                    {/* <div className="announce" >
                         <img className='announcementlogo' src={annoucementlogo} />
-                    </div >
+                    </div > */}
                     <div className="announceTable">
-                        <table className='table'>
+                        {/* <table className='table'>
                             <tbody>
-                                <tr>
-                                    <th> Content </th> <th > Date </th > </tr >
+                                <tr> */}
+                                    {/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
                                 {announcements.map((x, index) =>
-                                    <tr className='specialtr' key={index} onClick={console.log("SADAS")} >
-                                        <td><Link to={href + index}>{x.text}</Link></td >
-                                        <td>{x.date}</td></tr >
+                                    <div className='specialtr' key={index} onClick={console.log("SADAS")} >
+                                        <figure className="figuree"><img src={deneme}/></figure>
+                                        <h3><Link to={href + index}>{x.text}</Link></h3>
+                                        <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. </p>
+                                        </div>
                                 )
-                                } </tbody>
-                        </table >
-                        <div className="detail">
-                            Hello
-                    </div>
+                                } 
+                                {/* </tbody> */}
+                        {/* </table > */}
                     </div>
 
                 </div>

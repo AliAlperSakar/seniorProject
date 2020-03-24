@@ -1,5 +1,5 @@
 .announcement{
-    margin: 80px 20px;
+    margin:80px 20px;
     text-align: center;
 }
 
@@ -17,10 +17,40 @@ table {
     margin: 200px;
 }
 
-.specialtr:hover {
-    background-color: #2d2a62;
+
+.announceTable{
+    padding: 0px;
+    margin-top: 100px;
 }
 
+.specialtr{
+    /* display: inline-flex; */
+    width: 45%;
+    height: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.specialtr:hover{
+    position: static;
+    width: 50%;
+    background-color: whitesmoke;
+    border: 2px solid beige;
+
+}
+
+.specialtr figure{
+    margin:1em;
+}
+
+.specialtr img{
+    margin: 0px;
+    width: 80%;
+}
+
+.specialtr p{
+    padding: 10px;
+}
 td,
 th {
     border: 1px solid #dddddd;
