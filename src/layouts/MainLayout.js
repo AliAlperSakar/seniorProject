@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import '../css/mainLayout.css';
 import bilkentuniversity from '../images/fotos/bilkentuniversity.png'
 import 'react-awesome-slider/dist/styles.css';
@@ -13,7 +13,7 @@ function ElementList(props) {
             <Link to={element.toLowerCase()} className="a">{element}</Link>
             {
                 element.toLowerCase() == "tournaments" ?
-                    // <Icon name="angle down" /> 
+                    <Icon name="angle down" /> +
                     <div className="dropdiv">{dropdown}</div> : ""
             }
         </li>
