@@ -91,7 +91,7 @@
     opacity: 1; /* Firefox */
   }
 
-  #normal::placeholder{
+  #normal::placeholder {
     color: grey;
   }
   /*

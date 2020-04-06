@@ -37,7 +37,7 @@ class Login extends React.Component {
             passwordPlaceHolder = "Password is required";
             this.setState({placeholders:{idPlaceHolder,passwordPlaceHolder},err:true})
             return false;
-        }
+        } 
         return true;
     }
 
@@ -100,11 +100,7 @@ class Login extends React.Component {
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"><i class="fa fa-lock"></i></span>
                                         </div>
-                                        {this.state.passwordError ? <input id="err" name="password" type="password" className="form-control" placeholder={this.state.passwordError 
-                                            ? this.state.passwordError : this.state.passwordPlaceHolder} onChange={handleChange} /> 
-                                            : <input name="password" type="password" className="form-control" placeholder={this.state.passwordError 
-                                                ? this.state.passwordError : this.state.passwordPlaceHolder} onChange={handleChange} />}
-
+                                        <input id = {!this.state.err ? "normal" : "err" }name="password" type="password" className="form-control" placeholder={passwordPlaceHolder} onChange={handleChange} />
                                     </div>
                                     <div>
                                         <button type="button" className="btn btn-secondary btn-block" onClick={handleSubmit}>LOGIN</button>
