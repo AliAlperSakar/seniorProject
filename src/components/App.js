@@ -13,7 +13,7 @@ import Login from "./Login";
 import Tournament from "./Tournament";
 import Reservation from "./Reservation";
 import Course from "./Course";
-
+import Registered from "./Registered";
 
 
 
@@ -28,7 +28,8 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={Login}/>
+                        <Route path="/" exact component={HomePage}/>
+                        <Route path="/registered" component={Registered}/>
                         <Route path="/homepage" component={HomePage}/>
                         <Route path="/courses" component={Course}/>
                         <Route path="/tournaments" component={Tournament}/>

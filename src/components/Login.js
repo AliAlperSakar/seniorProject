@@ -48,8 +48,8 @@ class Login extends React.Component {
         } else {
             const { history } = this.props;
             const user = {
-                id: this.state.id,
-                password: this.state.password,
+                bilkentId: this.state.id,
+                password: this.state.password
             }
 
             axios.post("http://localhost:8081/login", { user })
