@@ -105,7 +105,14 @@ class Register extends Component {
                 password: this.state.Password,
                 status:this.state.status
             }
-            axios.post("http://localhost:8081/register", { usr })
+            axios.post("http://localhost:8081/register", {
+                name: this.state.Name,
+                surname: this.state.Surname,
+                bilkentId: this.state.Id,
+                email: this.state.Email,
+                password: this.state.Password,
+                status:this.state.status
+            })
                 .then(res => {
                     if (res.status === 200) {
                         console.log(res);
@@ -199,6 +206,7 @@ class Register extends Component {
                                                 <option class="form-control" value="student">Student</option>
                                                 <option class="form-control" value="academic">Academic</option>
                                                 <option class="form-control" value="staff">Staff</option>
+                                                <option class="form-control" value="admin">Admin</option>
                                             </select>
                                     </div>
                                     <div>

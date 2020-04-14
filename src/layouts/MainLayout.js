@@ -4,7 +4,7 @@ import bilkentuniversity from '../images/fotos/bilkentuniversity.png'
 import 'react-awesome-slider/dist/styles.css';
 import bilkentImage from '../images/bilkentImage.png';
 import { Link } from "react-router-dom";
-import { Icon } from 'semantic-ui-react';
+import { Icon,Button } from 'semantic-ui-react';
 
 function ElementList(props) {
     const element = props.elements;
@@ -61,6 +61,8 @@ class MainLayout extends Component {
                         {/* <img className="site-logo2" src={bilkentuniversity} /> */}
                         <Link to="/homepage"><img className="site-logo" src={bilkentImage} /></Link>
                         <ElementList elements={elements} />
+                        <Button inverted className="myAccount">My Account</Button>
+
                     </div>
                 </div>
             </div>

@@ -152,3 +152,9 @@ ul.menu li:hover .dropdiv{
     visibility: visible;
     /* display: block; */
 }
+
+.myAccount{
+    position: absolute;
+    right: 80px;
+    height: 60px;
+}
