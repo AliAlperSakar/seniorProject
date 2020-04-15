@@ -24,12 +24,15 @@
 }
 
 .hmpAnnounce{
+    margin-top: 5px;
     text-align: center;
+    background-color: white;
 }
 
 .hmpAnnounceTable{
     padding: 0px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .tbl {

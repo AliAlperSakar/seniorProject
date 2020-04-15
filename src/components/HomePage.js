@@ -17,10 +17,6 @@ import { SocialMediaIconsReact } from 'social-media-icons-react';
 
 var Carousel = require('react-responsive-carousel').Carousel;
 
-
-
-
-
 const slider = (
 	<AwesomeSlider animation="cubeAnimation">
 		<div data-src={Bbuilding} />
@@ -45,20 +41,17 @@ export default class HomePage extends Component {
 				announcements: response.data
 			}))
 
-		console.log(store.get('loggedIn'));
-		console.log(store.get('status'));
-
 	}
 
 	onChange(e) {
-		console.log(e);
 	}
-	onClickItem(e) {
-		console.log(e);
-	}
-	onClickThumb(e) {
 
+	onClickItem(e) {
 	}
+
+	onClickThumb(e) {
+	}
+
 	onChangeFileHandler(event) {
 		this.setState({
 			selectedFile: event.target.files[0],
@@ -66,10 +59,7 @@ export default class HomePage extends Component {
 		console.log(event.target.files[0])
 	}
 
-
-
 	onClick = (e) => {
-		return console.log(e.id);
 	}
 	render() {
 		
@@ -101,7 +91,7 @@ export default class HomePage extends Component {
 	
 						</div>
 						<div className="img" >
-							<Carousel width="100%" autoPlay={true} infiniteLoop={true} showArrows={true} onChange={this.onChange} onClickItem={this.onClickItem} onClickThumb={this.onClickThumb}>
+							<Carousel width="100%"	autoPlay={true} infiniteLoop={true} showArrows={true} onChange={this.onChange} onClickItem={this.onClickItem} onClickThumb={this.onClickThumb}>
 								<div>
 									<img src={Bbuilding} />
 									<p className="legend">Bilkent B Building</p>
@@ -121,7 +111,32 @@ export default class HomePage extends Component {
 								<tbody>
 									<tr> */}
 								{/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
-								{console.log(announcements)}
+								<h2>Announcements</h2>
+								{announcements.map((x, index) =>
+									x.id < 6 ?
+										<Link to={href + index}>
+											<div className='specialtr' style={{ width: "20%", margin: "0px 40px 0px 40px" }} key={x.id}>
+												<h3 style={{ margin: "20px" }}>{x.text}</h3>
+												<figure className="figuree"><img src={Bbuilding} /></figure>
+	
+												<p style={{ height: "20%" }}>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. </p>
+											</div>
+										</Link>
+										: <div></div>
+								)
+								}
+								{/* </tbody> */}
+								{/* </table > */}
+							</div>							
+						</div>
+						<div className="hmpAnnounce">
+
+						<div className="hmpAnnounceTable">
+								{/* <table className='table'>
+								<tbody>
+									<tr> */}
+								{/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
+								<h2>Events</h2>
 								{announcements.map((x, index) =>
 									x.id < 6 ?
 										<Link to={href + index}>
@@ -138,14 +153,14 @@ export default class HomePage extends Component {
 								{/* </tbody> */}
 								{/* </table > */}
 							</div>
-							<footer style={{ width: "100%", paddingTop: "30px", paddingBottom: "30px", marginBottom: "50px", marginTop: "100px", backgroundColor: "#dadce8" }}>
+							</div>
+						<footer style={{ textAlign:"center", width: "100%", paddingTop: "30px", paddingBottom: "30px", marginBottom: "50px", marginTop: "100px", backgroundColor: "#dadce8" }}>
 								<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="twitter" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(28,186,223,1)" iconSize="5" roundness="50%" url="https://twitter.com/BilkentUniv" size="60" />&nbsp;&nbsp;&nbsp;
 								<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="facebook" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(28,90,223,1)" iconSize="5" roundness="50%" url="https://tr-tr.facebook.com/pages/Bilkent-Yurtlar-Spor-Salonu/277203525641805" size="60" />&nbsp;&nbsp;&nbsp;
 								<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="youtube" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(251,31,0,1)" iconSize="5" roundness="50%" url="https://www.youtube.com/user/BilkentUniversitesi" size="60" />&nbsp;&nbsp;&nbsp;
 								<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="instagram" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(248,87,0,1)" iconSize="5" roundness="50%" url="http://instagram.com/bilkentuniv" size="60" />
 							</footer>
 							<p class="copyright" style={{marginBottom:"50px"}}>Copyright ©  Bilkent Üniversitesi. All Rights Reserved</p>
-						</div>
 						{/* <div className='tablo' >
 							<div className='tbl' >
 								<div className="announce" >
@@ -229,7 +244,6 @@ export default class HomePage extends Component {
                             <tbody>
                                 <tr> */}
 							{/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
-							{console.log(announcements)}
 							{announcements.map((x, index) =>
 								x.id < 6 ?
 									<Link to={href + index}>

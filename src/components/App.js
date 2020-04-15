@@ -14,15 +14,15 @@ import Tournament from "./Tournament";
 import Reservation from "./Reservation";
 import Course from "./Course";
 import Registered from "./Registered";
-
+import FileUpload from "./FileUpload";
+import '../css/app.css';
 
 
 class App extends Component {
     constructor() {
         super();
     }
-
-
+    
     render() {
         return (
             <Router>
