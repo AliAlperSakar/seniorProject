@@ -6,3 +6,21 @@ span{
     font-weight: 700;
     text-transform: none;
 }
+
+
+.general{
+    width: 100%;
+    align-items: flex-end;
+}
+.mngannspecial{
+    width: 20%;
+    height: 15%;
+    border: 2px solid wheat;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.mngannspecial figure{
+    margin:1em;
+}

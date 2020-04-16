@@ -12,7 +12,7 @@ function ElementList(props) {
     const element = props.elements;
     const listItems = element.map((element) =>
         <li key={element.toLowerCase()}>
-            <Link to={element.toLowerCase()} className="a">{element}</Link>
+            <Link to={"/" + element.toLowerCase()} className="a">{element}</Link>
             {
                 element.toLowerCase() == "tournaments" ?
                     // <Icon name="angle down" /> +
@@ -88,7 +88,7 @@ class MainLayout extends Component {
                         {status == "admin" ?
                             <div className="adminPanel">
                                 <ul>
-                                    <Link to="/manageAnnouncement"><li>Manage Announcements</li></Link>
+                                    <Link to="/announcement/manage"><li>Manage Announcements</li></Link>
                                     <li>Manage Reservations</li>
                                     <li>Manage Tournaments</li>
                                     <li>Manage Accounts</li>

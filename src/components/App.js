@@ -29,14 +29,15 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={manageAnnouncement}/>
+                        <Route path="/" exact component={Login}/>
                         <Route path="/registered" component={Registered}/>
                         <Route path="/homepage" component={HomePage}/>
                         <Route path="/courses" component={Course}/>
                         <Route path="/tournaments" component={Tournament}/>
                         <Route path="/reservations" component={Reservation}/>
                         <Route path="/announcements" component={Announcement}/>
-                        <Route path="/announcements/:id" component={Announcement}/>
+                        <Route path="/announcement/manage" exact component={manageAnnouncement}/>
+                        <Route path="/announcement/manage/:id" component={manageAnnouncement}/>
                         <Route path="/register" exact component={Register} />
                         <Route path="/login" exact component={Login} />
                         <Route path="/homepage" exact component={HomePage} />
