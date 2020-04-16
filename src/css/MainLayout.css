@@ -171,19 +171,23 @@ ul.menu li:hover .dropdiv{
 }
 
 .adminPanel{
-    display: block;
+    display: none;
 }
 .adminPanel ul{
     background-color: #2d2a62;
     position: absolute;
     right: 86px;
     top: 60px;
-    color: white;
+    color: #76bfff;
     z-index: 30;
     margin-left: 0px;
     padding: 1%;
     margin-bottom: 0px;
     text-align: center;
+}
+
+.adminPanel li:hover{
+    color: white;
 }
 
 .adminPanel li{

@@ -16,6 +16,7 @@ import Course from "./Course";
 import Registered from "./Registered";
 import FileUpload from "./FileUpload";
 import '../css/app.css';
+import manageAnnouncement from "./admin/manageAnnouncement";
 
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={HomePage}/>
+                        <Route path="/" exact component={manageAnnouncement}/>
                         <Route path="/registered" component={Registered}/>
                         <Route path="/homepage" component={HomePage}/>
                         <Route path="/courses" component={Course}/>

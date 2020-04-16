@@ -88,7 +88,7 @@ class MainLayout extends Component {
                         {status == "admin" ?
                             <div className="adminPanel">
                                 <ul>
-                                    <li>Manage Announcements</li>
+                                    <Link to="/manageAnnouncement"><li>Manage Announcements</li></Link>
                                     <li>Manage Reservations</li>
                                     <li>Manage Tournaments</li>
                                     <li>Manage Accounts</li>
